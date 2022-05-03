@@ -1,5 +1,5 @@
 Hi
-You can use this Bot for server . 
+You can use this Bot for your little server . 
 
 This bot Write With Node.js Version 12 .
 
