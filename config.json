@@ -1,4 +1,7 @@
 {
     "token":"bot token",
-    "prefix":"prefix"
+    "prefix":"prefix",
+    "dev":"dev name",
+    "botname":"botname",
+    "cdtime":"cooldown time for bot (second)",
 }
