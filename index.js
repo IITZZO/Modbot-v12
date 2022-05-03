@@ -3,16 +3,13 @@ const Canvas = require('canvas')
 const   { Client, Intents, MessageButton, MessageActionRow, MessageSelectMenu } = require('discord.js'),
         client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES ] }),
         fs = require('fs');
+const {token , prefix ,dev ,botname ,cdtime } = require('./config.json');
 const moment = require("moment");
-const prefix = "!";
-const dev = "Dev </> Team";
 const db = require('quick.db');
 const usersMap = new Map();
-const botname = "esm bot";
 const inviteLink = "";
 require("moment-duration-format");
 const cooldown = new Set();
-const cdtime = 5;
 
 
 
@@ -21,7 +18,7 @@ client.on("ready", () => {
     client.user.setPresence({
       status: 'idle',
       activity: {
-          name: `ElecTroN404`,
+          name: `${botname}`,
           type: 'PLAYING',
       }
   })
@@ -256,4 +253,4 @@ client.on('message', message => {
 })
 
 //===============================================================
-client.login(process.env.token)
+client.login(token)
